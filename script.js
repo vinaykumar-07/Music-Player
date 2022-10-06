@@ -1,4 +1,4 @@
-console.log("Welcome to Sangeet!");
+console.log("Welcome to my Music-player");
 
 // Initializing Variables
 let songIndex = 0;
@@ -10,27 +10,26 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "1. Ram Siya Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpeg"},
-    {songName: "2. Meethi Meethi Gallan", filePath: "songs/2.mp3", coverPath: "covers/2.jpeg"},
-    {songName: "3. Soja Zara- Baahubali 2", filePath: "songs/3.mp3", coverPath: "covers/3.jpeg"},
-    {songName: "4. Sia's Unstoppable", filePath: "songs/4.mp3", coverPath: "covers/4.jpeg"},
-    {songName: "5. Rangi Saari- Mrittika", filePath: "songs/5.mp3", coverPath: "covers/5.jpeg"},
-    {songName: "6. BamBholle Laxmii", filePath: "songs/6.mp3", coverPath: "covers/6.jpeg"},
-    {songName: "7. Tera Hone Laga Hoon", filePath: "songs/7.mp3", coverPath: "covers/7.jpeg"},
-    {songName: "8. Kalank- Arijit Singh", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg"},
-    {songName: "9. Memories- Maroon 5", filePath: "songs/9.mp3", coverPath: "covers/9.jpeg"},
-    {songName: "10. Kun Faya Kun Atif Aslam", filePath: "songs/10.mp3", coverPath: "covers/10.jpeg"},
-    {songName: "11. Girls Like You- Maroon 5", filePath: "songs/11.mp3", coverPath: "covers/3.jpeg"},
-    {songName: "12. Chaad Baaliyan", filePath: "songs/12.mp3", coverPath: "covers/4.jpeg"},
-    {songName: "13. Hamare Saath Shri Raghunath", filePath: "songs/13.mp3", coverPath: "covers/5.jpeg"},
-    {songName: "14. Tera Yaar Hun", filePath: "songs/14.mp3", coverPath: "covers/6.jpeg"},
-    {songName: "15. Hawayein", filePath: "songs/15.mp3", coverPath: "covers/7.jpeg"},
-    {songName: "16. Khairiyat", filePath: "songs/16.mp3", coverPath: "covers/8.jpeg"},
-    {songName: "17. Teri Mitti", filePath: "songs/17.mp3", coverPath: "covers/9.jpeg"},
-    {songName: "18. Namo Namo", filePath: "songs/18.mp3", coverPath: "covers/10.jpeg"},
-    {songName: "19. Soja Zara", filePath: "songs/19.mp3", coverPath: "covers/2.jpeg"},
-    {songName: "20. Ram Siya Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpeg"},
-    {songName: "21. Aawara Shaam Hai ", filePath: "songs/21.mp3", coverPath: "covers/5.jpeg"},
+    {songName: "Ram Siya Ram", filePath: "songs/1.mp3"},
+    {songName: "Meethi Meethi Gallan", filePath: "songs/2.mp3", coverPath: "covers/2.jpeg"},
+    {songName: "Soja Zara- Baahubali 2", filePath: "songs/3.mp3", coverPath: "covers/3.jpeg"},
+    {songName: "Sia's Unstoppable", filePath: "songs/4.mp3", coverPath: "covers/4.jpeg"},
+    {songName: "Rangi Saari- Mrittika", filePath: "songs/5.mp3", coverPath: "covers/5.jpeg"},
+    {songName: "BamBholle Laxmii", filePath: "songs/6.mp3", coverPath: "covers/6.jpeg"},
+    {songName: "Tera Hone Laga Hoon", filePath: "songs/7.mp3", coverPath: "covers/7.jpeg"},
+    {songName: "Kalank- Arijit Singh", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg"},
+    {songName: "Memories", filePath: "songs/9.mp3", coverPath: "covers/9.jpeg"},
+    {songName: "Kun Faya Kun Atif Aslam", filePath: "songs/10.mp3", coverPath: "covers/10.jpeg"},
+    {songName: "Girls Like You- Maroon 5", filePath: "songs/11.mp3", coverPath: "covers/3.jpeg"},
+    {songName: "Chaad Baaliyan", filePath: "songs/12.mp3", coverPath: "covers/4.jpeg"},
+    {songName: "Hamare Saath Shri Raghunath", filePath: "songs/13.mp3", coverPath: "covers/5.jpeg"},
+    {songName: "Tera Yaar Hun", filePath: "songs/14.mp3", coverPath: "covers/6.jpeg"},
+    {songName: "Hawayein", filePath: "songs/15.mp3", coverPath: "covers/7.jpeg"},
+    {songName: "Khairiyat", filePath: "songs/16.mp3", coverPath: "covers/8.jpeg"},
+    {songName: "Teri Mitti", filePath: "songs/17.mp3", coverPath: "covers/9.jpeg"},
+    {songName: "Namo Namo", filePath: "songs/18.mp3", coverPath: "covers/10.jpeg"},
+    {songName: "Soja Zara", filePath: "songs/19.mp3", coverPath: "covers/2.jpeg"},
+    {songName: "Ram Siya Ram", filePath: "songs/1.mp3", coverPath: "covers/1.jpeg"},
 ]
 
 songItems.forEach((element, i)=>{ 
